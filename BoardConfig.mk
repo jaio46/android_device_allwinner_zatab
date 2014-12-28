@@ -20,6 +20,13 @@ include device/allwinner/common/BoardConfig.mk
 
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/allwinner/zatab/recovery_keys.c
 
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := cortex-a9
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_SMP := true
+
 TARGET_KERNEL_CONFIG := zatab_defconfig
 
 SW_BOARD_USES_GSENSOR_TYPE := bma250
